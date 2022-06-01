@@ -52,6 +52,12 @@ namespace RegexPattern
             Console.WriteLine("Enter The Password: ");
             string PasswordRule3 = Console.ReadLine();
             person.Password(PasswordRule3);
+
+            //UC8
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("Enter The Password: ");
+            string PasswordRule4 = Console.ReadLine();
+            person.Password(PasswordRule4);
         }
     }
 }
