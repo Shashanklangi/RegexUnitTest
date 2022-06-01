@@ -29,6 +29,12 @@ namespace RegexPattern
             string EmailID = Console.ReadLine();
             person.EmailID(EmailID);
 
+            //UC4
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("Enter The Phone_Number: ");
+            string Phone_Number = Console.ReadLine();
+            person.Phonenumber(Phone_Number);
+
         }
     }
 }

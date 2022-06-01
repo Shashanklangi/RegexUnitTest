@@ -54,5 +54,19 @@ namespace UnitTest1
             //Assert
             Assert.AreEqual(expected, actual);
         }
+        [Test]
+        public void Validating_PhoneNumber()
+        {
+            //Arrange
+            string phonenumber = "91 1234567890";
+            person = new Validation();
+
+            //Act
+            string expected = "91 1234567890";
+            string actual = person.Phonenumber(phonenumber);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

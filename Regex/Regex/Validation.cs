@@ -12,6 +12,7 @@ namespace RegexPattern
         public string FirstName = ("^[A-Z]{1}[A-Za-z]{3,}$");
         public string LastName = ("^[A-Z]{1}[A-Za-z]{3,}$");
         public string Email = ("^[A-Za-z]{3,}@[a-z]{3,}.[a-z]{3,}$");
+        public string PhoneNumber = ("^[A-Za-z]{3,}@[a-z]{3,}.[a-z]{3,}$");
 
         public string ValidateFirstName(string firstName)
         {
@@ -48,6 +49,18 @@ namespace RegexPattern
                 Console.WriteLine("Invalid Email_ID");
             }
             return Email_ID;
+        }
+        public string Phonenumber(string Phone_Number)
+        {
+            if (Regex.IsMatch(Phone_Number, PhoneNumber))
+            {
+                Console.WriteLine("Valid Phone_Number");
+            }
+            else
+            {
+                Console.WriteLine("Invalid Phone_Number");
+            }
+            return Phone_Number;
         }
     }
 }
