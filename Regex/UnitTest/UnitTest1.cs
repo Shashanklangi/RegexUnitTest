@@ -123,5 +123,19 @@ namespace UnitTest1
             //Assert
             Assert.AreEqual(expected, actual);
         }
+        [Test]
+        public void Validating_AllEmails()
+        {
+            //Arrange
+            string Emails = "Shashank@gmail.com.com";
+            person = new Validation();
+
+            //Act
+            string expected = "Shashank@gmail.com.com";
+            string actual = person.AllEmails(Emails);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

@@ -58,6 +58,12 @@ namespace RegexPattern
             Console.WriteLine("Enter The Password: ");
             string PasswordRule4 = Console.ReadLine();
             person.Password(PasswordRule4);
+
+            //UC9
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("Enter The Email_ID: ");
+            string Emails = Console.ReadLine();
+            person.AllEmails(Emails);
         }
     }
 }
