@@ -46,6 +46,12 @@ namespace RegexPattern
             Console.WriteLine("Enter The Password: ");
             string PasswordRule2 = Console.ReadLine();
             person.Password(PasswordRule2);
+
+            //UC7
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("Enter The Password: ");
+            string PasswordRule3 = Console.ReadLine();
+            person.Password(PasswordRule3);
         }
     }
 }
