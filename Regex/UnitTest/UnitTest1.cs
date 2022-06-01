@@ -25,6 +25,20 @@ namespace UnitTest1
 
             //Assert
             Assert.AreEqual(expected, actual);
-        }        
+        }
+        [Test]
+        public void Validating_Lastname()
+        {
+            //Arrange
+            string lastname = "Langi";
+            person = new Validation();
+
+            //Act
+            string expected = "Langi";
+            string actual = person.ValidateLastName(lastname);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
