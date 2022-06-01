@@ -40,5 +40,19 @@ namespace UnitTest1
             //Assert
             Assert.AreEqual(expected, actual);
         }
+        [Test]
+        public void Validating_EmailID()
+        {
+            //Arrange
+            string Email_ID = "YouGetShashank@gmail.com";
+            person = new Validation();
+
+            //Act
+            string expected = "YouGetShashank@gmail.com";
+            string actual = person.EmailID(Email_ID);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
