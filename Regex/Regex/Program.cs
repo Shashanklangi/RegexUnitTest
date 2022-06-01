@@ -35,6 +35,11 @@ namespace RegexPattern
             string Phone_Number = Console.ReadLine();
             person.Phonenumber(Phone_Number);
 
+            //UC5
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("Enter The Password: ");
+            string Password = Console.ReadLine();
+            person.Password(Password);
         }
     }
 }
